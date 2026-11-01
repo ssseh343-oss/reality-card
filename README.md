@@ -1,2 +1,33 @@
-# reality-card
-REALITY CARD - Personal Fantasy Card Collection
+# REALITY CARD V1.0
+
+零付費、個人收藏型 PWA 原型。
+
+## 功能
+- 手機拍照 / 相簿上傳
+- 怪獸、魔法、陷阱卡
+- 本機隨機卡名、效果、背景故事
+- 六階稀有度抽取
+- AI 插畫提示詞複製、人工匯入插畫
+- 卡片合成、卡冊、搜尋、篩選、圖鑑
+- IndexedDB 本機保存
+- JSON 備份 / 還原
+
+## 部署
+1. 解壓縮本 ZIP。
+2. 將資料夾內所有檔案上傳至 GitHub repository 根目錄。
+3. 在 Cloudflare Pages 選擇該 repository，Framework preset 選 None，Build command 留空，Build output directory 填 `/` 或 `.`（依介面要求）。
+4. 部署後以 Android Chrome 開啟網址，從瀏覽器選單選「新增至主畫面」或「安裝應用程式」。
+
+## 使用
+1. 進入「創造」，上傳照片並選擇卡片類型。
+2. 輸入素材名稱及風格關鍵字，生成卡片設定。
+3. 複製插畫提示詞，到 ChatGPT 圖片生成功能搭配原始照片製作「無文字、無卡框」插畫。
+4. 將生成的插畫下載到手機，再回到 App 匯入。
+5. 保存至卡冊。
+
+## 重要
+- 本版本不呼叫 AI API。文字與稀有度由本機規則產生；插畫需人工匯入。
+- 所有資料保存在目前瀏覽器的 IndexedDB。請定期匯出 JSON 備份。
+- 清除 Chrome 網站資料可能刪除卡片；解除安裝前請先備份。
+- 不同手機不會自動同步。
+- PWA 安裝及離線快取需要 HTTPS 網址（例如 Cloudflare Pages）。

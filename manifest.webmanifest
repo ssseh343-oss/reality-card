@@ -1,0 +1,17 @@
+{
+  "name": "REALITY CARD",
+  "short_name": "REALITY CARD",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0d1220",
+  "theme_color": "#111522",
+  "description": "把日常變成傳說的個人卡牌收藏遊戲",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
